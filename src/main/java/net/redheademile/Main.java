@@ -23,6 +23,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        System.out.println();
         TwentyTwentyThree.one();
+        System.out.println();
+        TwentyTwentyThree.two();
     }
 }
