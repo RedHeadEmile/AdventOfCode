@@ -1,5 +1,7 @@
 package net.redheademile;
 
+import net.redheademile.year2023.Year2023;
+
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -23,9 +25,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println();
-        TwentyTwentyThree.one();
-        System.out.println();
-        TwentyTwentyThree.two();
+        Year2023.showAll();
     }
 }
