@@ -1,5 +1,6 @@
 package net.redheademile;
 
+import net.redheademile.year2015.Year2015;
 import net.redheademile.year2023.Year2023;
 
 import java.io.IOException;
@@ -25,6 +26,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        Year2015.showAll();
         Year2023.showAll();
     }
 }
