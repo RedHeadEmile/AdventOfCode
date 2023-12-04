@@ -9,7 +9,7 @@ public class Day10 {
         String input = getInput();
 
         for (int k = 0; k < 40; k++) {
-            String result = "";
+            StringBuilder result = new StringBuilder();
 
             char lastChar = input.charAt(0);
             int amountOfThisChar = 1;
@@ -18,13 +18,13 @@ public class Day10 {
                 if (c == lastChar)
                     ++amountOfThisChar;
                 else {
-                    result += Integer.toString(amountOfThisChar) + lastChar;
+                    result.append(amountOfThisChar).append(lastChar);
                     lastChar = c;
                     amountOfThisChar = 1;
                 }
             }
-            result += Integer.toString(amountOfThisChar) + lastChar;
-            input = result;
+            result.append(amountOfThisChar).append(lastChar);
+            input = result.toString();
         }
 
         System.out.println("[Part 1] Result: " + input.length());
