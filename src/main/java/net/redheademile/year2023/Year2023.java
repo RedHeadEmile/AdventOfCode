@@ -25,6 +25,13 @@ public class Year2023 {
         Day4.partTwo();
     }
 
+    public static void dayFive() {
+        System.out.println("Day 5 of the advent of code 2023:");
+        Day5.partOne();
+        Day5.partTwo();
+
+    }
+
     public static void showAll() {
         System.out.println();
         System.out.println("Advent of code 2023:");
@@ -36,5 +43,7 @@ public class Year2023 {
         dayThree();
         System.out.println();
         dayFour();
+        System.out.println();
+        dayFive();
     }
 }
